@@ -49,4 +49,13 @@ public class Person {
     public int hashCode() {
         return Objects.hash(firstName, lastName, emailAddress);
     }
+
+    @Override
+    public String toString() {
+        return "Person{" +
+                "firstName='" + firstName + '\'' +
+                ", lastName='" + lastName + '\'' +
+                ", emailAddress='" + emailAddress + '\'' +
+                '}';
+    }
 }
