@@ -1,5 +1,7 @@
 package model;
 
+import java.util.Objects;
+
 public class Student extends Person {
 
     private String subject;
@@ -23,5 +25,19 @@ public class Student extends Person {
 
     public void setRollNumber(String rollNumber) {
         this.rollNumber = rollNumber;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+        Student student = (Student) o;
+        return Objects.equals(subject, student.subject) && Objects.equals(rollNumber, student.rollNumber);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), subject, rollNumber);
     }
 }
