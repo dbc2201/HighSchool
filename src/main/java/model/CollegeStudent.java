@@ -42,4 +42,9 @@ public class CollegeStudent extends Student {
     public int hashCode() {
         return Objects.hash(super.hashCode(), currentYear, major);
     }
+
+    @Override
+    public String toString() {
+        return "CollegeStudent{" + "currentYear=" + currentYear + ", major='" + major + '\'' + '}';
+    }
 }
