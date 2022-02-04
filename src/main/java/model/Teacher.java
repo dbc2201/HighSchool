@@ -42,4 +42,9 @@ public class Teacher extends Person {
     public int hashCode() {
         return Objects.hash(super.hashCode(), salary, subject);
     }
+
+    @Override
+    public String toString() {
+        return "Teacher{" + "salary=" + salary + ", subject='" + subject + '\'' + '}';
+    }
 }
