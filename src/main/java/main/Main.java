@@ -2,6 +2,7 @@ package main;
 
 import model.Person;
 import model.Student;
+import model.Teacher;
 
 import javax.swing.*;
 
@@ -20,5 +21,20 @@ public class Main {
         );
         System.out.println("student = " + student);
         JOptionPane.showMessageDialog(null, student, "Student Details", JOptionPane.PLAIN_MESSAGE);
+
+        Teacher teacher = new Teacher(
+                "Divyansh",
+                "Bhardwaj",
+                "divyanshb22@gmail.com",
+                123456.789,
+                "Object-Oriented Programming"
+        );
+        System.out.println("teacher = " + teacher);
+        JOptionPane.showMessageDialog(
+                null,
+                teacher,
+                "Teacher Details",
+                JOptionPane.PLAIN_MESSAGE
+        );
     }
 }
