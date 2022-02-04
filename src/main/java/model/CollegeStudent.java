@@ -8,7 +8,7 @@ public class CollegeStudent extends Student {
     private String major;
 
     public CollegeStudent(String firstName, String lastName, String emailAddress, int currentYear, String major) {
-        super(firstName, lastName, emailAddress);
+        super(firstName, lastName, emailAddress, major, 123456789L);
         this.currentYear = currentYear;
         this.major = major;
     }
