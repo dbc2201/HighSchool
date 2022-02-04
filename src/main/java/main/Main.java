@@ -1,5 +1,6 @@
 package main;
 
+import model.CollegeStudent;
 import model.Person;
 import model.Student;
 import model.Teacher;
@@ -34,6 +35,21 @@ public class Main {
                 null,
                 teacher,
                 "Teacher Details",
+                JOptionPane.PLAIN_MESSAGE
+        );
+
+        CollegeStudent collegeStudent = new CollegeStudent(
+                "divyansh",
+                "bhardwaj",
+                "divyanshb22@gmail.com",
+                4,
+                "Computer Science & Engineering"
+        );
+        System.out.println("collegeStudent = " + collegeStudent);
+        JOptionPane.showMessageDialog(
+                null,
+                collegeStudent,
+                "College Student Details",
                 JOptionPane.PLAIN_MESSAGE
         );
     }
