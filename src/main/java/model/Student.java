@@ -21,11 +21,11 @@ public class Student extends Person {
         this.subject = subject;
     }
 
-    public String getRollNumber() {
+    public long getRollNumber() {
         return rollNumber;
     }
 
-    public void setRollNumber(String rollNumber) {
+    public void setRollNumber(long rollNumber) {
         this.rollNumber = rollNumber;
     }
 
