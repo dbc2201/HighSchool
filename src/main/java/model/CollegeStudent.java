@@ -1,5 +1,7 @@
 package model;
 
+import java.util.Objects;
+
 public class CollegeStudent extends Student {
 
     private int currentYear;
@@ -25,5 +27,19 @@ public class CollegeStudent extends Student {
 
     public void setMajor(String major) {
         this.major = major;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+        CollegeStudent that = (CollegeStudent) o;
+        return currentYear == that.currentYear && Objects.equals(major, that.major);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), currentYear, major);
     }
 }
