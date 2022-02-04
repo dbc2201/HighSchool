@@ -40,4 +40,9 @@ public class Student extends Person {
     public int hashCode() {
         return Objects.hash(super.hashCode(), subject, rollNumber);
     }
+
+    @Override
+    public String toString() {
+        return "Student{" + "subject='" + subject + '\'' + ", rollNumber='" + rollNumber + '\'' + '}';
+    }
 }
