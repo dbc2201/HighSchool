@@ -5,10 +5,12 @@ import java.util.Objects;
 public class Student extends Person {
 
     private String subject;
-    private String rollNumber;
+    private long rollNumber;
 
-    public Student(String firstName, String lastName, String emailAddress) {
+    public Student(String firstName, String lastName, String emailAddress, String subject, long rollNumber) {
         super(firstName, lastName, emailAddress);
+        this.subject = subject;
+        this.rollNumber = rollNumber;
     }
 
     public String getSubject() {

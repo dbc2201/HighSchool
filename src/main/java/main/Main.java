@@ -11,7 +11,13 @@ public class Main {
         System.out.println("person = " + person);
         JOptionPane.showMessageDialog(null, person, "Person Details", JOptionPane.PLAIN_MESSAGE);
 
-        Student student = new Student("divyansh", "bhardwaj", "divyanshb22@gmail.com");
+        Student student = new Student(
+                "divyansh",
+                "bhardwaj",
+                "divyanshb22@gmail.com",
+                "Object-Oriented Programming",
+                123456789L
+        );
         System.out.println("student = " + student);
         JOptionPane.showMessageDialog(null, student, "Student Details", JOptionPane.PLAIN_MESSAGE);
     }
