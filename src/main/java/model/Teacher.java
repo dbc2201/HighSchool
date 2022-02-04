@@ -1,5 +1,7 @@
 package model;
 
+import java.util.Objects;
+
 public class Teacher extends Person {
 
     private double salary;
@@ -25,5 +27,19 @@ public class Teacher extends Person {
 
     public void setSubject(String subject) {
         this.subject = subject;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        if (!super.equals(o)) return false;
+        Teacher teacher = (Teacher) o;
+        return Double.compare(teacher.salary, salary) == 0 && Objects.equals(subject, teacher.subject);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(super.hashCode(), salary, subject);
     }
 }
