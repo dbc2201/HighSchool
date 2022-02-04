@@ -10,4 +10,20 @@ public class CollegeStudent extends Student {
         this.currentYear = currentYear;
         this.major = major;
     }
+
+    public int getCurrentYear() {
+        return currentYear;
+    }
+
+    public void setCurrentYear(int currentYear) {
+        this.currentYear = currentYear;
+    }
+
+    public String getMajor() {
+        return major;
+    }
+
+    public void setMajor(String major) {
+        this.major = major;
+    }
 }
